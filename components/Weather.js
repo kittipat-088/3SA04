@@ -10,6 +10,7 @@ export default function Weather(props) {
         main: 'main',
         description: 'description',
         temp: 0,
+        city: "",
     })
 
     useEffect(() => {
@@ -22,7 +23,8 @@ export default function Weather(props) {
                     setForecastInfo({
                         main: json.weather[0].main,
                         description: json.weather[0].description,
-                        temp: json.main.temp
+                        temp: json.main.temp, 
+                        city: json.name,
                     });
                     console.log(forecastInfo)
                 })
@@ -39,6 +41,7 @@ export default function Weather(props) {
             <ImageBackground source={require('../bg.jpg')} style={styles.backdrop}>
                 <View style={styles.cover}>
                     <Text style={styles.medium}>Zip Code: {props.zipCode}</Text>
+                    <Text style={styles.medium}>city: {forecastInfo.city}</Text>
                     <Forecast {...forecastInfo} />
                 </View>
             </ImageBackground>
