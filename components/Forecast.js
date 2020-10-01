@@ -21,14 +21,14 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     medium: {
-        fontSize: 30,
+        fontSize: 50,
         color: '#FFF',
-        marginTop: 20,
+        marginTop: 30,
     },
     small: {
-        fontSize: 20,
+        fontSize: 30,
         color: '#FFF',
-        marginTop: 20,
+        marginTop: 30,
 
     }
 })
