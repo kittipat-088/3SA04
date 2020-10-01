@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     cover: {
         backgroundColor: '#000',
         width: '100%',
-        height: 300,
+        height: 500,
         opacity: 0.5,
         justifyContent: 'center',
         alignItems: 'center',
